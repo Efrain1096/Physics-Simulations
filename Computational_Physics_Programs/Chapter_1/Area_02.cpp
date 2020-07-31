@@ -1,3 +1,5 @@
+// A program to compute and store the area and circumference of 10 circles of ascending radius.
+
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,6 @@
+/* Similar to the previous program, except that the circumference and area of the 10 circles are calculated in a function
+   and the circumference and area variables are referenced and modified by said function.
+*/
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -28,7 +31,6 @@ int main()
         myfile << (i+1) << " R= " << radiusArray[i] << " area= " << area << endl;
     }
 myfile.close();
-
 }
 
 // Learned about passing in arguments as the address of the output variables.

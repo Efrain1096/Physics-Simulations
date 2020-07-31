@@ -1,3 +1,7 @@
+/* Similar to the previous programs, except that the radius is given by the user as input for then different circles. 
+   The results and the computations of the areas and the circumferences are computed and stored into a DAT file for logging purposes at the end.
+*/
+
 #include <iostream>
 #include <fstream>
 using namespace std;

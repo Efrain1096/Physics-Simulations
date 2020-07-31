@@ -1,3 +1,6 @@
+
+// A simple program to compute the circumference and area of a circle.
+
 #include <iostream>
 using namespace std;
 

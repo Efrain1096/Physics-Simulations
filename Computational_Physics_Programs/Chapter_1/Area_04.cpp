@@ -31,6 +31,7 @@ myfile.close();
 
 }
 
+// Learned about passing in arguments as the address of the output variables.
 void areaOfCircle(const double &radius, double &circumference, double &area)
 {
     circumference = 2*PI*radius;

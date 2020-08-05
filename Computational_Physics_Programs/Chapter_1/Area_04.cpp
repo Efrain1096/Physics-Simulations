@@ -27,8 +27,8 @@ int main()
     for(int i = 0; i < N; i++)
     {
         areaOfCircle(radiusArray[i], perimeter, area);
-        myfile << (i+1) << " R= " << radiusArray[i] << " perimeter= " << perimeter << endl;
-        myfile << (i+1) << " R= " << radiusArray[i] << " area= " << area << endl;
+        myfile << (i) << " R= " << radiusArray[i] << " perimeter= " << perimeter << endl;
+        //myfile << (i+1) << " R= " << radiusArray[i] << " area= " << area << endl;
     }
 myfile.close();
 }
@@ -39,3 +39,4 @@ void areaOfCircle(const double &radius, double &circumference, double &area)
     circumference = 2*PI*radius;
     area = 2*PI*radius*radius;
 }
+// To plot the data file, run the Gnuplot terminal, then input: plot "Area.DAT" using 1:5 with points

@@ -1,4 +1,5 @@
-/*  This program will simulate the trajectory of a particle moving on a circle
+/*  
+    This program will simulate the trajectory of a particle moving on a circle
     with constant angular velocity. Refer to the textbook, pages 63-75.
     
     Equations of the particle's trajectory: x(t) = x0 + R*cos(omega*(t-t0))
@@ -37,7 +38,7 @@
     4.Specify again the file name and file type. Repeat step 1.
     5.Plot y(t) on the same window with replot: replot "Circle.dat" using 1:3 with lines title "y(t)"
 
- DIRECTIONS TO MAKE A PNG PLOT OF THE Circle.dat FILE:
+    DIRECTIONS TO MAKE A PNG PLOT OF THE Circle.dat FILE:
 
     The example commands used are to make a png plot of the theta value at each second.
 
@@ -67,16 +68,11 @@
     5.Plot y(t) on the same window with replot: replot "Circle.dat" using 1:3 with lines title "y(t)"
     
 
-################################################################
-WORK IN PROGRESS TO REFINE AND POLISH INSTRUCTIONS!!!
+    ################################################################
+    WORK IN PROGRESS TO REFINE AND POLISH INSTRUCTIONS!!!
 
-#################################################################
-
-
-
-
-
-    */
+    #################################################################
+*/
  
 #include <iostream> 
 #include <fstream> // Needed for file creation and manipulation.
@@ -135,7 +131,6 @@ int main()
     myFile.precision(17); // Set the precision of the floating point number to 17 significant digits. The default is 6.
 
     //Now that the values have been stored and the period computed with said valid values, now to compute the trajectory path of the circle!
-
     t = t0;
 
     while(t <= tf)

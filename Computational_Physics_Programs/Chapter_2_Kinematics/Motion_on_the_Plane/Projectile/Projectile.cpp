@@ -1,8 +1,20 @@
 /*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface.
+    Using the equations of position and velocity for a particle in 2D motion:
 
-    The easiest way to plot and visualize the data in the DAT file, set the Gnuplot terminal 
+        Initial x-velocity = (Initial Velocity)*(Cos(Theta)) = v0_x*cos(theta)
+        Initial y-velocity = (Initial Velocity)*(Sin(Theta)) = v0_y*sin(theta)
 
-    It's amazing how simple yet useful some of these introductory physics equations are when coded.
+
+        x-position = (Initial horizontal velocity) * (Time) = v0_x*t
+        y-position = (Initial vertical velocity) * (Time) - 0.5*(Gravity)*(Time)^2 = v0_y*t - 0.5*g*t^2
+
+        x-velocity = Initial horizontal velocity = v0_x
+        y-velocity = Initial vertical velocity = v0_y - g*t
+
+    The easiest way to plot and visualize the data in the DAT file is to set the Gnuplot terminal 
+    to the "dummy" plotting. 
+
+    It's amazing how simple yet useful some of these introductory trigonometric equations are when coded.
 
 */
 

@@ -45,7 +45,7 @@ int main()
     cout << "length= " << length << " theta0= " << theta0 << endl;
     cout << "t0= " << t0 << " tf= " << tf << " dt= " << dt << endl;
 
-    // Begin initializing equations and required values
+    // Begin initializing equations and required values.
     omega = sqrt(g/length);
 
     cout << "# omega= " << omega <<  " T= " << 2.0*PI/omega << endl;
@@ -53,7 +53,7 @@ int main()
     ofstream myFile("SimplePendulum.dat");
     myFile.precision(17);
 
-    // Compute the trajectory using the above computed values
+    // Compute the trajectory using the above computed values.
     t = t0;
 
     while( t <= tf)

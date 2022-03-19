@@ -14,8 +14,8 @@
         x-velocity = Initial horizontal velocity = v0_x
         y-velocity = Initial vertical velocity = v0_y - g*t
 
-    The easiest way to plot and visualize the data in the DAT file is to set the Gnuplot terminal 
-    to the "dummy" plotting. 
+    The easiest way to plot and visualize the data in the DAT file is to set the Gnuplot terminal
+    to the "dummy" plotting.
 
     It's amazing how simple yet useful some of these introductory trigonometric equations are when coded.
 
@@ -40,7 +40,7 @@ int main()
     double theta, v0x, v0y, v0;
     string buff;
 
-    //Ask user for input:
+    // Ask user for input:
 
     cout << "# Enter v0, theta (in degrees): " << endl;
     cin >> v0 >> theta;

@@ -71,6 +71,10 @@
     ################################################################
     WORK IN PROGRESS TO REFINE AND POLISH INSTRUCTIONS!!!
 
+    I've yet to figure out how to run the animate GNU file.
+
+
+
     #################################################################
 */
  

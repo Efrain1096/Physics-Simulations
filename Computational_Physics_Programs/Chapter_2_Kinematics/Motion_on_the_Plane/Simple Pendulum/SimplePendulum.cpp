@@ -65,7 +65,7 @@ int main()
         y = -length*cos(theta);
 
         vx = length*dtheta_dt*cos(omega);
-        vx = length*dtheta_dt*sin(omega);
+        vy = length*dtheta_dt*sin(omega);
 
         myFile << t << " " << x << " " << y << " " << vx << " " << vy << " "
         << theta << dtheta_dt << endl;

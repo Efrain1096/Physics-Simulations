@@ -5,11 +5,14 @@ Summary: Program to compute the trajectory of a simple pendulum.
 
 Gnuplot commands:
 
-set output 'parametricPlot.png'
+- set output 'parametricPlot.png'
 
-set terminal pngcairo size 1920, 1080 enhanced font 'Verdana,20'
+- set terminal pngcairo size 1920, 1080 enhanced font 'Verdana,20'
 
-plot "SimplePendulum.dat" u 1:2 title "x(t)" w l, "SimplePendulum.dat" u 1:3 title "y(t)" w l, "SimplePendulum.dat" u 1:4 title "v_x(t)" w l, "SimplePendulum.dat" u 1:5 title "v_y(t)" w l
+- plot "SimplePendulum.dat" u 1:2 title "x(t)" w l, "SimplePendulum.dat" u 1:3 title "y(t)" w l, "SimplePendulum.dat" u 1:4 title "v_x(t)" w l, "SimplePendulum.dat" u 1:5 title "v_y(t)" w l, "SimplePendulum.dat" u 1:6 title "theta(t)" w l
+
+The command above is incomplete. It needs the angular velocity portion to plot.
+
 */
 #include <iostream>
 #include <fstream>

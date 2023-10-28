@@ -1,11 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface.*/
 =======
 /*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface.
+=======
+/*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface. Coriolis force is being ignored.
+>>>>>>> 5933911 (Expanded a bit in the comments.)
     Using the equations of position and velocity for a particle in 2D motion:
 
-        Initial x-velocity = (Initial Velocity)*(Cos(Theta)) = v0_x*cos(theta)
-        Initial y-velocity = (Initial Velocity)*(Sin(Theta)) = v0_y*sin(theta)
+        Initial x-velocity v_x(0) = v_0x = (Initial Velocity)*(Cos(Theta)) = v0_x*cos(theta)
+        Initial y-velocity v_y(0) = v_0y = (Initial Velocity)*(Sin(Theta)) = v0_y*sin(theta)
 
 
         x-position = (Initial horizontal velocity) * (Time) = v0_x*t

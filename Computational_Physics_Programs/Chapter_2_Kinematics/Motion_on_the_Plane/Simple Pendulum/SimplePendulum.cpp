@@ -11,7 +11,8 @@ Gnuplot commands:
 
 - plot "SimplePendulum.dat" u 1:2 title "x(t)" w l, "SimplePendulum.dat" u 1:3 title "y(t)" w l, "SimplePendulum.dat" u 1:4 title "v_x(t)" w l, "SimplePendulum.dat" u 1:5 title "v_y(t)" w l, "SimplePendulum.dat" u 1:6 title "theta(t)" w l
 
-The command above is incomplete. It needs the angular velocity portion to plot.
+The above command allows for the creation of an interactive plot window.
+However, the command above is incomplete. It needs the angular velocity portion to plot.
 
 */
 #include <iostream>

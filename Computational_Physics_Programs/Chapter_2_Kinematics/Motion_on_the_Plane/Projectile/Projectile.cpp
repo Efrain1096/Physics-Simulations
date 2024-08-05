@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /*Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface.*/
-=======
 /*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface.
 =======
 /*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface. Coriolis force is being ignored.
@@ -94,4 +92,3 @@ int main()
         t = t + dt;
     }
 }
->>>>>>> 9d708b1 (Added more to the description at the top of the CPP program.)

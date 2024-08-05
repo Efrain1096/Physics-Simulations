@@ -1,8 +1,0 @@
-Separate the individual values by a space
-Enter a decimal value for omega: 
-Enter the value for the center of the circle (X0, y0) and radius R:
-Enter the values for t0, tf and dt
-Omega= 1
-x0= 1 y0= 1 R= 0.5
-t0= 0 tf= 20 dt= 0.01
-T= 6.28319

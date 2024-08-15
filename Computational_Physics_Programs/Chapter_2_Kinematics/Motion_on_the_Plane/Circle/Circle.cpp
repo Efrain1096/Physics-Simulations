@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /*  
     This program will simulate the trajectory of a particle moving on a circle
     with constant angular velocity. Refer to the textbook, pages 63-75.
@@ -74,7 +72,6 @@
     WORK IN PROGRESS TO REFINE AND POLISH INSTRUCTIONS!!!
 
     I've yet to figure out how to run the animate GNU file.
-
 
 
     #################################################################
@@ -152,4 +149,3 @@ int main()
         t = t+dt;
     }
 }
->>>>>>> 58b6095 (Added an animation file for the circle program. Relearned how to plot parametric equations in Gnuplot.)

@@ -38,35 +38,7 @@
     4.Specify again the file name and file type. Repeat step 1.
     5.Plot y(t) on the same window with replot: replot "Circle.dat" using 1:3 with lines title "y(t)"
 
-    DIRECTIONS TO MAKE A PNG PLOT OF THE Circle.dat FILE:
-
-    The example commands used are to make a png plot of the theta value at each second.
-
-    1. First, we want to set the output file's name and file type: set output 'fileName.fileType'. Invoke the Gnuplot terminal, then enter the following:
-    set output 'circlePlot.png'
-
-    2. Then, set the terminal plotting mode, the plot dimensions, and the font of the plot's labels:
-    set terminal terminal_plot_mode size pixel_width,pixel-length enhanced font 'font_of_choosing,font_size'
-
-    Example: set terminal pngcairo size 350, 262 enhanced font 'Verdana,10'
-
-    3. Finally we can proceed to plot the Circle.dat file created from running this program. Using the following commands:
-    x0 = 1; y0 = 1 
-    plot "Circle.dat" using 1:(atan2($3-y0,$2-x0)) with lines title "theta(t)",pi, -pi
-
-    If the above example commands are used, a png file will be created in the working directory named "circlePlot". Which can be clicked on and viewed.
-    It will be a simple plot of the value of the angle theta in radians for the y-axis and the seconds computed for the x-axis.
-
-    DIRECTIONS FOR PLOTTING THE PARAMETRIC EQUATIONS x(t) and y(t):
-
-    Similar as the instructions above for plotting the theta values, but with a few differences since it involves having two functions on the same plot.
-
-    1.Specify the output file name and file type: set output 'parametricPlot.png'
-    2.Setup the window: set terminal pngcairo size 1920, 1080 enhanced font 'Verdana,20'
-    3.Plot x(t): plot "Circle.dat" using 1:2 with lines title "x(t)"
-    4.Specify again the file name and file type. Repeat step 1.
-    5.Plot y(t) on the same window with replot: replot "Circle.dat" using 1:3 with lines title "y(t)"
-    
+   
 
     ################################################################
     WORK IN PROGRESS TO REFINE AND POLISH INSTRUCTIONS!!!

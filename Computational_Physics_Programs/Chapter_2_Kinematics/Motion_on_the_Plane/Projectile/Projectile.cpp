@@ -6,15 +6,36 @@
 
     Using the equations of position and velocity for a particle in 2D motion:
 
+
+        Initial conditions:
         Initial x-velocity v_x(0) = v_0x = (Initial Velocity)*(Cos(Theta)) = v0_x*cos(theta)
         Initial y-velocity v_y(0) = v_0y = (Initial Velocity)*(Sin(Theta)) = v0_y*sin(theta)
 
+        Kinematic equations:
+        x-position: (Initial horizontal velocity) * (Time) = v0_x*t
+        y-position: (Initial vertical velocity) * (Time) - 0.5*(Gravity)*(Time)^2 = v0_y*t - 0.5*g*t^2
 
-        x-position = (Initial horizontal velocity) * (Time) = v0_x*t
-        y-position = (Initial vertical velocity) * (Time) - 0.5*(Gravity)*(Time)^2 = v0_y*t - 0.5*g*t^2
+        x-velocity: Initial horizontal velocity = v0_x
+        y-velocity: Initial vertical velocity = v0_y - g*t
 
-        x-velocity = Initial horizontal velocity = v0_x
-        y-velocity = Initial vertical velocity = v0_y - g*t
+        Air resistance: 
+        F = -mkv, where 
+
+        a_x = dv_x/dt = -k * v_x
+        a_y = dv_y/dt = -k * v_y - g
+
+        with the initial conditions specified above, 
+
+        v_x(t) = v0_x * e^(-kt) 
+        v_y(t) = (v0_y + g/k)e^(-kt) - g/k
+
+        x(t) = v0_x/k * (1 - e^(-kt))
+        y(t) = 1/k * (v0_y + g/k) * (1 - e^(-kt)) - g/k * t
+
+        The difference here is providing the value for constant 'k'.
+
+        WIP (I still haven't added the equations for drag as of 2/26/25, to be continued...)
+
 
     The easiest way to plot and visualize the data in the DAT file is to set the Gnuplot terminal
     to the "dummy" plotting.

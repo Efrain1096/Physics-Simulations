@@ -7,7 +7,7 @@
 
     Where the circle is centered at (x0, y0) and has a radius R with a constant velocity omega.
     The initial position of the particle at time t0 to be theta(t0) = 0.
-    The circle's path trajectory is written to a file called "Cricle.dat". Of which, will then be plotted with Gnuplot manually by the user 
+    The circle's path trajectory is written to a file called "Circle.dat". Of which, will then be plotted with Gnuplot manually by the user 
   
     DIRECTIONS TO MAKE A PNG PLOT OF THE Circle.dat FILE:
 

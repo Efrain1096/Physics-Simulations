@@ -3,7 +3,7 @@
 /*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface.
 =======
 /*  Program to calculate and model a particle launched or shot at a an angle theta near the Earth's surface. Coriolis force is being ignored.
->>>>>>> 5933911 (Expanded a bit in the comments.)
+
     Using the equations of position and velocity for a particle in 2D motion:
 
         Initial x-velocity v_x(0) = v_0x = (Initial Velocity)*(Cos(Theta)) = v0_x*cos(theta)
@@ -20,6 +20,17 @@
     to the "dummy" plotting.
 
     It's amazing how simple yet useful some of these introductory trigonometric equations are when coded.
+
+
+
+    INSTRUCTIONS TO PLOT PROJECTILE:
+        As a single line, type (or copy) the following: 
+
+
+        plot "Projectile.dat" using 1:2 w l t "x(t)",
+        plot "Projectile.dat" using 1:3 w l t "y(t)",
+        plot "Projectile.dat" using 1:4 w l t "Vx(t)",
+        plot "Projectile.dat" using 1:5 w l t "Vy(t)"
 
 */
 

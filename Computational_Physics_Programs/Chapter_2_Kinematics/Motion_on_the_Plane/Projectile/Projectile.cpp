@@ -45,13 +45,20 @@
 
 
     INSTRUCTIONS TO PLOT PROJECTILE:
-        As a single line, type (or copy) the following: 
+
+    1.Specify the output file name and file type: set output 'parametricPlot.png'
+    2.Setup the window: set terminal pngcairo size 1280, 720 enhanced font 'Verdana,20'
+    3. As a single line, type (or copy) the following: 
 
 
-        plot "Projectile.dat" using 1:2 w l t "x(t)",
-        plot "Projectile.dat" using 1:3 w l t "y(t)",
-        plot "Projectile.dat" using 1:4 w l t "Vx(t)",
-        plot "Projectile.dat" using 1:5 w l t "Vy(t)"
+        plot "Projectile.dat" u 1:2 w l t "x(t)",
+         "Projectile.dat" u 1:3 w l t "y(t)",
+         "Projectile.dat" u 1:4 w l t "Vx(t)",
+         "Projectile.dat" u 1:5 w l t "Vy(t)"
+
+    Otherwise, what would need to be done is set the output again and replot, then set the output, replot, set outpot, rinse and repeat. 
+    Putting it all in one line make it all happen at once and the output only needs to be set once. However, it's still not ideal if
+    for whatever reason more and more functions have to be plotted. It doesn't scale well. This is something to look into later on.
 
 */
 

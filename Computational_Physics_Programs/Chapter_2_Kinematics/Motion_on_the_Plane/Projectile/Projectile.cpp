@@ -32,9 +32,14 @@
         x(t) = v0_x/k * (1 - e^(-kt))
         y(t) = 1/k * (v0_y + g/k) * (1 - e^(-kt)) - g/k * t
 
+
+        Note: This is not a great medium for typing out equations... LaTex is something to consider in the future for 
+        when I implement equations not in the textbook. 
+
+
         The difference here is providing the value for constant 'k'.
 
-        WIP (I still haven't added the equations for drag as of 2/26/25, to be continued...)
+        WIP (I still haven't added the equations to the program for drag as of 2/26/25, to be continued...)
 
 
     The easiest way to plot and visualize the data in the DAT file is to set the Gnuplot terminal

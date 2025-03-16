@@ -56,9 +56,10 @@
          "Projectile.dat" u 1:4 w l t "Vx(t)",
          "Projectile.dat" u 1:5 w l t "Vy(t)"
 
-    Otherwise, what would need to be done is set the output again and replot, then set the output, replot, set outpot, rinse and repeat. 
-    Putting it all in one line make it all happen at once and the output only needs to be set once. However, it's still not ideal if
-    for whatever reason more and more functions have to be plotted. It doesn't scale well. This is something to look into later on.
+    Otherwise, what would need to be done is set the output again and replot, then set the output, replot, set outpot, rinse and repeat.
+    I was pulling my hair out until I referred to "Circle.cpp" since I vaguely remembered something like this happening before.
+    Putting it all in one line makes it all happen at once and the output only needs to be set one time. However, it's still not ideal, if
+    for whatever reason, more and more functions have to be plotted. It doesn't scale well. This is something to look into later on.
 
 */
 

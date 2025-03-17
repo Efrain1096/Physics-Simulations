@@ -141,13 +141,18 @@ int main()
             vx = v0x; 
             vy = v0y - g * t; 
         */
-            
+            x = v0x * t; 
+            y = v0y * t - 0.5 * g * t * t;
+            vx = v0x; 
+            vy = v0y - g * t; 
        
-
+       /*
         x = (v0x*t)*(1.0 - exp(-k*t));
         y = (1.0/k)*(v0y+(g/k))*(1.0-exp(-k*t))-(g/k)*t;
         vx = v0x*exp(-k*t);
         vy = (v0y+(g/k))*exp(-k*t)-(g/k);
+       */
+     
 
         file << t << " " << x << " " << y << " " << vx << " " << vy << " " << endl;
         cout << t << " " << x << " " << y << " " << vx << " " << vy << " " << endl;

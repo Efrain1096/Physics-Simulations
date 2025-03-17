@@ -66,6 +66,8 @@
     Putting it all in one line makes it all happen at once and the output only needs to be set one time. However, it's still not ideal, if
     for whatever reason, more and more functions have to be plotted. It doesn't scale well. This is something to look into later on.
 
+    Also, 'u' 'w' 'l' 't' are just shortened for "using", "with", "lines", "title".
+
 */
 
 #include <iostream>
@@ -83,18 +85,20 @@ int main()
 
     // Variable Declaration.
 
-    double x0, y0, R, x, y, vx, vy, t, tf, dt;
+    double x0, y0, R, x, y, vx, vy, t, tf, dt, k;
     double theta, v0x, v0y, v0;
     string buff;
 
     // Ask user for input:
 
-    cout << "# Enter v0, theta (in degrees): " << endl;
-    cin >> v0 >> theta;
+    cout << "# Enter k, v0, theta (in degrees): " << endl;
+    cin >> k >> v0 >> theta;
 
     cout << "# Enter tf, dt: " << endl;
     cin >> tf >> dt;
 
+
+    cout << "k = " << k << endl;
     cout << "# v0= " << v0 << " theta= " << theta << " degrees" << endl;
     cout << "# t0= " << 0.0 << " tf= " << tf << " dt= " << dt << endl;
 
@@ -112,7 +116,7 @@ int main()
         exit(1);
     }
 
-    theta = (PI / 180) * theta;
+    theta = (PI/180)*theta;
     v0x = v0 * cos(theta);
     v0y = v0 * sin(theta);
 
@@ -127,10 +131,10 @@ int main()
 
     while (t <= tf)
     {
-        x = v0x * t;
-        y = v0y * t - 0.5 * g * t * t;
-        vx = v0x;
-        vy = v0y - g * t;
+        x = (v0x*t)*(1.0 - exp(-k*t));
+        y = (1.0/k)*(v0y+(g/k))*(1.0-exp(-k*t))-(g/k)*t;
+        vx = v0x*exp(-k*t);
+        vy = (v0y+(g/k))*exp(-k*t)-(g/k);
 
         file << t << " " << x << " " << y << " " << vx << " " << vy << " " << endl;
         cout << t << " " << x << " " << y << " " << vx << " " << vy << " " << endl;

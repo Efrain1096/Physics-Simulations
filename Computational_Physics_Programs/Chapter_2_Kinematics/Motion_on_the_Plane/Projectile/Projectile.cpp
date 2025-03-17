@@ -85,7 +85,7 @@ int main()
 
     // Variable Declaration.
 
-    double x0, y0, R, x, y, vx, vy, t, tf, dt, k;
+    double x0, y0, R, x, y, vx, vy, t, tf, dt, k, res;
     double theta, v0x, v0y, v0;
     string buff;
 
@@ -129,8 +129,21 @@ int main()
 
     t = 0.0;
 
+
     while (t <= tf)
     {
+
+        /* For now, I'll put them here in a comment block. Eventually I'll make it where the user can choose if air resistance is wanted or not.
+            At first, I thought that setting the constant 'k' to zero would be the solution to that. But then I looked at the equations more closely,
+            undefined errors would pop up since k is the denominator for dividing gravity.
+            x = v0x * t; 
+            y = v0y * t - 0.5 * g * t * t;
+            vx = v0x; 
+            vy = v0y - g * t; 
+        */
+            
+       
+
         x = (v0x*t)*(1.0 - exp(-k*t));
         y = (1.0/k)*(v0y+(g/k))*(1.0-exp(-k*t))-(g/k)*t;
         vx = v0x*exp(-k*t);
